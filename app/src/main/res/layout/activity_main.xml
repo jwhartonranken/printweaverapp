@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBasic"
+        style="@style/homeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnRoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDetail"
+        style="@style/homeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnPrintRoll"
+        app:layout_constraintEnd_toEndOf="@+id/btnBasic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnBasic"
+        app:layout_constraintTop_toBottomOf="@+id/btnBasic" />
+
+    <Button
+        android:id="@+id/btnItems"
+        style="@style/homeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnMagicItems"
+        app:layout_constraintEnd_toEndOf="@+id/btnDetail"
+        app:layout_constraintStart_toStartOf="@+id/btnDetail"
+        app:layout_constraintTop_toBottomOf="@+id/btnDetail" />
+
+    <Button
+        android:id="@+id/btnLinks"
+        style="@style/homeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnLinks"
+        app:layout_constraintEnd_toEndOf="@+id/btnItems"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/btnItems"
+        app:layout_constraintTop_toBottomOf="@+id/btnItems" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">PW Companion App</string>
+    <string name="addATraveler">add a traveler</string>
+    <string name="splash">Print Weaver Companion App</string>
+
+    <string name="btnRoll">Simple Roller</string>
+    <string name="btnPrintRoll">Detailed Roller</string>
+    <string name="btnMagicItems">Magic Items</string>
+    <string name="btnLinks">Links</string>
+
+    <string name="placeholderScroll">Accuracy</string>
+
+    <string name="d4">d4</string>
+    <string name="d6">d6</string>
+    <string name="d8">d8</string>
+    <string name="d10">d10</string>
+    <string name="d12">d12</string>
+    <string name="d20">d20</string>
+    <string name="d100">d100</string>
+    <string name="quantitySelector">Select a quantity of dice</string>
+    <string name="modifierSelector">Choose a number to add to the total</string>
+    <string name="add">+</string>
+    <string name="amount">#</string>
+    <string name="roll">Roll</string>
+
+    <string name="dieType">d4</string>
+    <string name="totalRoll">3</string>
+    <string name="arrayOfRolls">3</string>
+
+    <string name="digital">Digital</string>
+    <string name="physical">Physical</string>
+
+    <string name="obstacleSelector">Select the level of difficulty for this task</string>
+    <string name="D">D</string>
+    <string name="ob">OB</string>
+    <string name="switchAdvantage">Advantage</string>
+    <string name="switchDisadvantage">Disadvantage</string>
+    <string name="switchCombat">Combat</string>
+    <string name="switchExploding">Exploding</string>
+    <string name="printWeaverLogo">Print Weaver Logo</string>
+    <string name="addAnItem">Add an item</string>
+
+    <string-array name="itemType">
+        <item>Ring</item>
+        <item>Scroll</item>
+    </string-array>
+    <string name="hintItemName">Item Name</string>
+    <string name="hintItemEffect">Item Effect</string>
+    <string name="btnSave">Save</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnDelete">Delete</string>
+    <string name="btnUpdate">Update</string>
+
+    <string name="deleteAll">Delete All</string>
+    <string name="decorative">Decorative</string>
+    <string name="goHome">Return</string>
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/dieType"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryVariant"
+    tools:context=".SimpleRoller">
+
+    <TextView
+        android:id="@+id/tvD4"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/d4"
+        app:layout_constraintEnd_toStartOf="@+id/tvD6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvD6"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d6"
+        app:layout_constraintBottom_toBottomOf="@+id/tvD4"
+        app:layout_constraintEnd_toStartOf="@+id/tvD8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvD4"
+        app:layout_constraintTop_toTopOf="@+id/tvD4" />
+
+    <TextView
+        android:id="@+id/tvD8"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d8"
+        app:layout_constraintBottom_toBottomOf="@+id/tvD6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvD6"
+        app:layout_constraintTop_toTopOf="@+id/tvD6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvD10"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/d10"
+        app:layout_constraintEnd_toStartOf="@+id/tvD12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvD4" />
+
+    <TextView
+        android:id="@+id/tvD12"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d12"
+        app:layout_constraintBottom_toBottomOf="@+id/tvD10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvD10"
+        app:layout_constraintTop_toTopOf="@+id/tvD10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvD20"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/d20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvD100"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvD10" />
+
+    <TextView
+        android:id="@+id/tvD100"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d100"
+        app:layout_constraintBottom_toBottomOf="@+id/tvD20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvD20"
+        app:layout_constraintTop_toTopOf="@+id/tvD20"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/quantitySelector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvD20"
+        app:np_dividerColor="?attr/colorPrimary"
+        app:np_height="170dp"
+        app:np_max="100"
+        app:np_min="1"
+        app:np_selectedTextColor="?attr/colorPrimary"
+        app:np_selectedTextSize="20sp"
+        app:np_textColor="?attr/colorPrimary"
+        app:np_textSize="20sp"
+        app:np_value="1"
+        app:np_width="64dp" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npD10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="56dp"
+        android:contentDescription="@string/modifierSelector"
+        app:layout_constraintBottom_toBottomOf="@+id/npAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/npAmount"
+        app:layout_constraintVertical_bias="0.0"
+        app:np_dividerColor="?attr/colorPrimary"
+        app:np_height="170dp"
+        app:np_max="100"
+        app:np_min="0"
+        app:np_selectedTextColor="?attr/colorPrimary"
+        app:np_selectedTextSize="20sp"
+        app:np_textColor="?attr/colorPrimary"
+        app:np_textSize="20sp"
+        app:np_value="0"
+        app:np_width="64dp" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/amount"
+        app:layout_constraintBottom_toBottomOf="@+id/npAmount"
+        app:layout_constraintEnd_toStartOf="@+id/npAmount"
+        app:layout_constraintTop_toTopOf="@+id/npAmount"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="@+id/npD10"
+        app:layout_constraintEnd_toStartOf="@+id/npD10"
+        app:layout_constraintTop_toTopOf="@+id/npD10"
+        app:layout_constraintVertical_bias="0.443" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

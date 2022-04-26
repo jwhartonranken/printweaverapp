@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/onSecondary"
+    tools:context=".ComplexRoller">
+
+    <TextView
+        android:id="@+id/tvOB"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/ob"
+        android:textColor="@color/onPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/npD10"
+        app:layout_constraintEnd_toStartOf="@+id/npOB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/npD10"
+        app:layout_constraintTop_toTopOf="@+id/npD10" />
+
+    <TextView
+        android:id="@+id/tvD"
+        style="@style/dieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/D"
+        android:textColor="@color/onPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/npD10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npD10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/quantitySelector"
+        app:layout_constraintBottom_toBottomOf="@+id/tvD"
+        app:layout_constraintEnd_toStartOf="@+id/tvOB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvD"
+        app:layout_constraintTop_toTopOf="@+id/tvD"
+        app:np_dividerColor="@color/onPrimary"
+        app:np_height="170dp"
+        app:np_max="100"
+        app:np_min="0"
+        app:np_selectedTextColor="@color/onPrimary"
+        app:np_selectedTextSize="20sp"
+        app:np_textColor="?attr/colorPrimary"
+        app:np_textSize="20sp"
+        app:np_value="0"
+        app:np_width="64dp" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/npOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/obstacleSelector"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvOB"
+        app:layout_constraintTop_toTopOf="@+id/tvOB"
+        app:np_dividerColor="@color/onPrimary"
+        app:np_height="170dp"
+        app:np_max="10"
+        app:np_min="1"
+        app:np_selectedTextColor="@color/onPrimary"
+        app:np_selectedTextSize="20sp"
+        app:np_textColor="?attr/colorPrimary"
+        app:np_textSize="20sp"
+        app:np_value="0"
+        app:np_width="64dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swAdvantage"
+        style="@style/complexSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:minHeight="48dp"
+        android:text="@string/switchAdvantage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOB" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swDisadvantage"
+        style="@style/complexSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:text="@string/switchDisadvantage"
+        app:layout_constraintEnd_toEndOf="@+id/swAdvantage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/swAdvantage"
+        app:layout_constraintTop_toBottomOf="@+id/swAdvantage" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swCombat"
+        style="@style/complexSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:text="@string/switchCombat"
+        app:layout_constraintEnd_toEndOf="@+id/swDisadvantage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/swDisadvantage"
+        app:layout_constraintTop_toBottomOf="@+id/swDisadvantage" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swExploding"
+        style="@style/complexSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:text="@string/switchExploding"
+        app:layout_constraintEnd_toEndOf="@+id/swCombat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/swCombat"
+        app:layout_constraintTop_toBottomOf="@+id/swCombat" />
+
+    <Button
+        android:id="@+id/btnRollComplex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/onPrimary"
+        android:fontFamily="@font/ebgaramond"
+        android:text="@string/roll"
+        android:textColor="@color/onSecondary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/swExploding"
+        app:layout_constraintStart_toStartOf="@+id/swExploding"
+        app:layout_constraintTop_toBottomOf="@+id/swExploding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
